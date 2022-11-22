@@ -1,180 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <title>FilmsProject</title>
-  </head>
-  <nav class="bg-white dark:bg-gray-800 shadow">
-    <div class="max-w-7xl mx-auto px-8">
-      <div class="flex items-center justify-between h-16">
-        <div class="w-full justify-between flex items-center">
-          <a class="flex-shrink-0" href="/">
-            <img
-              class="h-8 w-8"
-              src="https://www.tailwind-kit.com/icons/rocket.svg"
-              alt="ElPepe Streams"
-            />
-          </a>
-          <div class="hidden md:block">
-            <div class="ml-10 flex items-baseline space-x-4">
-              <a
-                class="text-gray-300 hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                href="/#"
-              >
-                Home
-              </a>
-              <a
-                class="text-gray-800 dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                href="/#"
-              >
-                Gallery
-              </a>
-              <a
-                class="text-gray-300 hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                href="/#"
-              >
-                Content
-              </a>
-              <a
-                class="text-gray-300 hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                href="/#"
-              >
-                Contact
-              </a>
-            </div>
+<nav class="bg-white dark:bg-gray-800 shadow">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="w-full justify-between flex items-center">
+        <a class="flex-shrink-0" [routerLink]="['/']">
+          <!-- TODO AÑADIR NOMBRE AL LADO DEL ICONO (A LA MISMA ALTURA) -->
+          <img
+            class="h-8 w-8"
+            src="https://www.tailwind-kit.com/icons/rocket.svg"
+            alt="ElPepe Streams"
+          />
+        </a>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a
+              class="text-gray-300 hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              [routerLink]="['/']"
+            >
+              Home
+            </a>
+            <a
+              class="text-gray-800 dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              [routerLink]="['/peliculas']"
+            >
+              Peliculas
+            </a>
+            <a
+              class="text-gray-300 hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              [routerLink]="['/series']"
+            >
+              Series
+            </a>
           </div>
         </div>
-        <div class="block">
-          <div class="ml-4 flex items-center md:ml-6"></div>
-        </div>
-        <div class="-mr-2 flex md:hidden">
-          <button
-            class="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
+      </div>
+      <div class="block">
+        <div class="ml-4 flex items-center md:ml-6"></div>
+      </div>
+      <div class="-mr-2 flex md:hidden">
+        <button
+          class="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
+        >
+          <svg
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="h-8 w-8"
+            viewBox="0 0 1792 1792"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="h-8 w-8"
-              viewBox="0 0 1792 1792"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"
-              ></path>
-            </svg>
-          </button>
-        </div>
+            <path
+              d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"
+            ></path>
+          </svg>
+        </button>
       </div>
     </div>
-    <div class="md:hidden">
-      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <a
-          class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          href="/#"
+  </div>
+  <div class="md:hidden">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <a
+        class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium"
+        [routerLink]="['/']"
         >
-          Home
-        </a>
-        <a
-          class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium"
-          href="/#"
+        Home
+      </a>
+      <a
+        class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium"
+        [routerLink]="['/peliculas']"
         >
-          Gallery
-        </a>
-        <a
-          class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          href="/#"
+        Películas
+      </a>
+      <a
+        class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium"
+        [routerLink]="['/series']"
         >
-          Content
-        </a>
-        <a
-          class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          href="/#"
-        >
-          Contact
-        </a>
-      </div>
+        Series
+      </a>
     </div>
-  </nav>
-
-  <body>
-    <div class="card">
-      <img
-        src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzNzI5w3iKM-KdasCDvlOEUgD2ojlf7IW5b-e3tqFmhW2JRSCz"
-        alt=""
-      />
-      <div class="overlay">
-        <div class="play">
-          <i class="fa fa-play"></i>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img
-        src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNSOjcSmrXYIZ517jTKmCDxBwIJU4_ojFweUDLI1Dssn2UfTsx"
-        alt=""
-      />
-      <div class="overlay">
-        <div class="play">
-          <i class="fa fa-play"></i>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfmfwHJen4VQ88Fby-TelNhHQJDvBXSqXYa1HMuyyFDx12Eujl"
-        alt=""
-      />
-      <div class="overlay">
-        <div class="play">
-          <i class="fa fa-play"></i>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <img
-        src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_.jpg"
-        alt=""
-      />
-      <div class="overlay">
-        <div class="play">
-          <i class="fa fa-play"></i>
-        </div>
-      </div>
-    </div>
-  </body>
-
-  <!-- TODO MIRAR COMO HACER QUE EL FOOTER QUEDE AL FINAL DE LA WEB -->
-  <footer
-    class="p-4 bg-white shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800"
-  >
-    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-      >© 2022
-      <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All
-      Rights Reserved.
-    </span>
-    <ul
-      class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0"
-    >
-      <li>
-        <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
-      </li>
-      <li>
-        <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-      </li>
-      <li>
-        <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
-      </li>
-      <li>
-        <a href="#" class="hover:underline">Contact</a>
-      </li>
-    </ul>
-  </footer>
-</html>
+  </div>
+</nav>
 <router-outlet></router-outlet>

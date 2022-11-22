@@ -3,10 +3,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* body {
+body {
     background-color: #121212;
-} */
-
-* {
-    background-color: #1f2937;
 }
