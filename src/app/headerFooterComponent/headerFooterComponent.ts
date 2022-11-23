@@ -3,8 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'headerFooterComponent',
   templateUrl: './headerFooterComponent.html',
-  styleUrls: ['./headerFooterComponent.css']
+  styleUrls: ['./headerFooterComponent.css'],
 })
-export class HeaderFooterComponent {
-
-}
+export class HeaderFooterComponent {}
