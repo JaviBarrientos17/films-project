@@ -6,6 +6,8 @@ import { PeliculasComponent } from './peliculasComponent/peliculasComponent.comp
 import { SeriesComponent } from './seriesComponent/seriesComponent';
 
 const routes: Routes = [
+  // TODO COMENTAR LA SIGUIENTE LINEA PARA VER SI FUNCIONA
+  // TODO CORRECTAMENTE EL RENDER DEL HEADER/FOOTER EN EL APPP COMPONENT
   { path: '', component: AppComponent },
   { path: 'peliculas', component: PeliculasComponent },
   { path: 'series', component: SeriesComponent },
