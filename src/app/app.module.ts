@@ -12,9 +12,9 @@ import { SeriesComponent } from './seriesComponent/seriesComponent';
 @NgModule({
   declarations: [
     AppComponent,
-    PeliculasComponent,
-    SeriesComponent,
     HeaderComponent,
+    PeliculasComponent,
+    //SeriesComponent,
     FooterComponent,
   ],
   imports: [
