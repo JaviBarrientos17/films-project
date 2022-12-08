@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'backgroundBlack' : '#121212',
-      }
+        backgroundBlack: "#121212",
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [require("@themesberg/flowbite/plugin")],
+};
