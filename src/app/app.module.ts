@@ -14,7 +14,7 @@ import { SeriesComponent } from './seriesComponent/seriesComponent';
     AppComponent,
     HeaderComponent,
     PeliculasComponent,
-    //SeriesComponent,
+    SeriesComponent,
     FooterComponent,
   ],
   imports: [
