@@ -8,8 +8,6 @@ body {
   height: 100vh;
 }
 .card {
-  width: 180px;
-  height: 260px;
   position: relative;
   justify-self: center;
   border: 1px solid #85858554;
